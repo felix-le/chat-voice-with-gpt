@@ -83,5 +83,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents, addUtilities, theme }) {
+      addUtilities({
+        ".heading": {
+          fontSize: theme("fontSize.lg"),
+          fontStyle: "italic",
+          fontWeight: "bold",
+          color: theme("colors.primary"),
+        },
+      });
+    },
+  ],
 };
