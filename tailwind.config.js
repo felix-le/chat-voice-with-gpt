@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: ["./App.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./src/**/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     colors: {
       primary: "#FED929",
@@ -45,13 +49,13 @@ module.exports = {
       "6xl": ["64px", "1"],
       "7xl": ["98px", "1"],
     },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1440px",
-    },
+    // screens: {
+    //   sm: "640px",
+    //   md: "768px",
+    //   lg: "1024px",
+    //   xl: "1280px",s
+    //   "2xl": "1440px",
+    // },
     borderWidth: {
       DEFAULT: "1px",
       0: "0",
@@ -84,15 +88,15 @@ module.exports = {
     },
   },
   plugins: [
-    function ({ addComponents, addUtilities, theme }) {
-      addUtilities({
-        ".heading": {
-          fontSize: theme("fontSize.lg"),
-          fontStyle: "italic",
-          fontWeight: "bold",
-          color: theme("colors.primary"),
-        },
-      });
-    },
+    // function ({ addComponents, addUtilities, theme }) {
+    //   addUtilities({
+    //     ".heading": {
+    //       fontSize: theme("fontSize.lg"),
+    //       fontStyle: "italic",
+    //       fontWeight: "bold",
+    //       color: theme("colors.primary"),
+    //     },
+    //   });
+    // },
   ],
 };
