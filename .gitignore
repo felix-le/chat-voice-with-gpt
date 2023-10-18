@@ -74,3 +74,4 @@ xcuserdata
 yarn-debug.*
 yarn-error.*
 yarn-error.log
+.env
