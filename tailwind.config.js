@@ -88,15 +88,15 @@ module.exports = {
     },
   },
   plugins: [
-    // function ({ addComponents, addUtilities, theme }) {
-    //   addUtilities({
-    //     ".heading": {
-    //       fontSize: theme("fontSize.lg"),
-    //       fontStyle: "italic",
-    //       fontWeight: "bold",
-    //       color: theme("colors.primary"),
-    //     },
-    //   });
-    // },
+    function ({ addComponents, addUtilities, theme }) {
+      addUtilities({
+        ".heading": {
+          fontSize: theme("fontSize.lg"),
+          // fontStyle: "italic",
+          // fontWeight: "bold",
+          // color: theme("colors.primary"),
+        },
+      });
+    },
   ],
 };
