@@ -13,6 +13,7 @@ module.exports = {
       white: "#fff",
       red: "#dc2626",
       green: "#059669",
+      blue: "#2563EB",
       yellow: {
         100: "#FFF8D4",
         200: "#FFF0AA",
@@ -88,15 +89,15 @@ module.exports = {
     },
   },
   plugins: [
-    function ({ addComponents, addUtilities, theme }) {
-      addUtilities({
-        ".heading": {
-          fontSize: theme("fontSize.lg"),
-          // fontStyle: "italic",
-          // fontWeight: "bold",
-          // color: theme("colors.primary"),
-        },
-      });
-    },
+    // function ({ addComponents, addUtilities, theme }) {
+    //   addUtilities({
+    //     ".heading": {
+    //       fontSize: theme("fontSize.lg"),
+    //       // fontStyle: "italic",
+    //       // fontWeight: "bold",
+    //       // color: theme("colors.primary"),
+    //     },
+    //   });
+    // },
   ],
 };
